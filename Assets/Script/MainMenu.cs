@@ -8,11 +8,13 @@ public class MainMenu : MonoBehaviour {
 	public bool isContinue = false;
 
 	private GameObject informationHandler;
+	private InformationHandler infoHandler;
 	private Text text;
 
 	// Use this for initialization
 	void Start () {
 		informationHandler = GameObject.Find("InformationHandler");
+		infoHandler = informationHandler.GetComponent<InformationHandler> ();
 		text = GetComponent<Text> ();
 	}
 
@@ -33,11 +35,11 @@ public class MainMenu : MonoBehaviour {
 			Application.Quit ();					    //If you click on quit aplication quits.
 		} else if (isContinue) {
 			informationHandler.SetActive(true);
-			Application.LoadLevel("Island");				//If you click on other button it loads game!
+			Application.LoadLevel(2);				//If you click on other button it loads game!
 		}else {
+			infoHandler.updateInformationData(2);
 			informationHandler.SetActive(true);
-			informationHandler.GetComponent<InformationHandler>().Reset();
-			Application.LoadLevel("Island");				//If you click on other button it loads game!
+			Application.LoadLevel(2);				//If you click on other button it loads game!
 		}
 		
 	}

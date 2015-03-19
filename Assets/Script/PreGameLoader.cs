@@ -13,6 +13,6 @@ public class PreGameLoader : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		informationHandler.SetActive (true);
-		Application.LoadLevel ("MainMenu");
+		Application.LoadLevel (1);
 	}
 }

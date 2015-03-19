@@ -465,7 +465,6 @@ MonoBehaviour:
   spawnTime: 3
   spawnPoints:
   - {fileID: 150063003}
-  player: {fileID: 0}
 --- !u!4 &1347045231
 Transform:
   m_ObjectHideFlags: 0
@@ -520,7 +519,6 @@ GameObject:
   - 95: {fileID: 1775776537}
   - 65: {fileID: 1775776541}
   - 135: {fileID: 1775776542}
-  - 114: {fileID: 1775776543}
   - 114: {fileID: 1775776544}
   m_Layer: 0
   m_Name: fachwerk40T
@@ -619,18 +617,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: .300000012
   m_Center: {x: 0, y: .109999999, z: -.550000012}
---- !u!114 &1775776543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1775776536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37b8ebdb93cea824e83dd1e3428327cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guiSkin: {fileID: 0}
 --- !u!114 &1775776544
 MonoBehaviour:
   m_ObjectHideFlags: 0
