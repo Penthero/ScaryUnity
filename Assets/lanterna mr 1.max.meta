@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: 40a130b70bd136a40915e23bb8ad1cdb
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: button
+    100002: Cylinder01
+    100004: Cylinder01_MeshPart0
+    100006: Cylinder01_MeshPart1
+    100008: Cylinder02
+    100010: Cylinder03
+    100012: lampada
+    100014: //RootNode
+    100016: lente
+    100018: Line01
+    100020: Line02
+    100022: Line03
+    100024: Sphere01
+    100026: Sphere02
+    100028: Sphere03
+    100030: Sphere04
+    100032: Spring01
+    100034: Spring01_MeshPart0
+    100036: Spring01_MeshPart1
+    400000: button
+    400002: Cylinder01
+    400004: Cylinder01_MeshPart0
+    400006: Cylinder01_MeshPart1
+    400008: Cylinder02
+    400010: Cylinder03
+    400012: lampada
+    400014: //RootNode
+    400016: lente
+    400018: Line01
+    400020: Line02
+    400022: Line03
+    400024: Sphere01
+    400026: Sphere02
+    400028: Sphere03
+    400030: Sphere04
+    400032: Spring01
+    400034: Spring01_MeshPart0
+    400036: Spring01_MeshPart1
+    2300000: button
+    2300002: Cylinder01_MeshPart0
+    2300004: Cylinder01_MeshPart1
+    2300006: Cylinder02
+    2300008: Cylinder03
+    2300010: lente
+    2300012: Sphere01
+    2300014: Sphere02
+    2300016: Sphere03
+    2300018: Sphere04
+    2300020: Spring01_MeshPart0
+    2300022: Spring01_MeshPart1
+    3300000: button
+    3300002: Cylinder01_MeshPart0
+    3300004: Cylinder01_MeshPart1
+    3300006: Cylinder02
+    3300008: Cylinder03
+    3300010: lente
+    3300012: Sphere01
+    3300014: Sphere02
+    3300016: Sphere03
+    3300018: Sphere04
+    3300020: Spring01_MeshPart0
+    3300022: Spring01_MeshPart1
+    4300000: Cylinder02
+    4300002: Cylinder03
+    4300004: Sphere01
+    4300006: Sphere02
+    4300008: Cylinder01_MeshPart0
+    4300010: Cylinder01_MeshPart1
+    4300012: lente
+    4300014: button
+    4300016: Spring01_MeshPart0
+    4300018: Spring01_MeshPart1
+    4300020: Sphere04
+    4300022: Sphere03
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
