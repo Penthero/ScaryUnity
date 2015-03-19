@@ -52,10 +52,13 @@
      <Compile Include="Assets\MobileInput\Scripts\PlatformSpecific\MobileInput.cs" />
      <Compile Include="Assets\MobileInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
      <Compile Include="Assets\MobileInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Script\InformationHandler.cs" />
      <Compile Include="Assets\Script\MainMenu.cs" />
+     <Compile Include="Assets\Script\MainMenuHandler.cs" />
      <Compile Include="Assets\Script\PauseManager.cs" />
      <Compile Include="Assets\Script\PickupObject.cs" />
      <Compile Include="Assets\Script\Pickupable.cs" />
+     <Compile Include="Assets\Script\PreGameLoader.cs" />
      <Compile Include="Assets\Script\flashlightAttack.cs" />
      <Compile Include="Assets\Script\scripts\CameraController.cs" />
      <Compile Include="Assets\Script\scripts\GroundController.cs" />

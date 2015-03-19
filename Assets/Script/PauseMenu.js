@@ -12,6 +12,9 @@ private var toolbarStrings : String[] = ["Audio", "Graphics"];
 private var firstPersonControllerCamera;
 private var mainCamera;
 
+public var player : GameObject;
+public var hud : GameObject;
+
 enum Page 
 {
     None, Main, Options, Credits
@@ -224,7 +227,7 @@ function PauseMenu()
 	{	
 		UnPauseGame();
 		Screen.showCursor = true;
-		Application.LoadLevel("MainMenu");
+		Application.LoadLevel(loadMainMenu);
 	}
 	
     EndPage();
