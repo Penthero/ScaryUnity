@@ -52,6 +52,7 @@
      <Compile Include="Assets\Script\FootStep.js" />
      <Compile Include="Assets\Script\HeadBob.js" />
      <Compile Include="Assets\Script\LevelLoad.js" />
+     <Compile Include="Assets\Script\LightFlicker.js" />
      <Compile Include="Assets\Script\Main_Menu.js" />
      <Compile Include="Assets\Script\PauseMenu.js" />
      <Compile Include="Assets\Script\PlayerAttack.js" />

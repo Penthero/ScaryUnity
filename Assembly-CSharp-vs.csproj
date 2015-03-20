@@ -55,11 +55,11 @@
      <Compile Include="Assets\Script\InformationHandler.cs" />
      <Compile Include="Assets\Script\MainMenu.cs" />
      <Compile Include="Assets\Script\MainMenuHandler.cs" />
+     <Compile Include="Assets\Script\MeleeAttack.cs" />
      <Compile Include="Assets\Script\PauseManager.cs" />
      <Compile Include="Assets\Script\PickupObject.cs" />
      <Compile Include="Assets\Script\Pickupable.cs" />
      <Compile Include="Assets\Script\PreGameLoader.cs" />
-     <Compile Include="Assets\Script\flashlightAttack.cs" />
      <Compile Include="Assets\Script\scripts\CameraController.cs" />
      <Compile Include="Assets\Script\scripts\GroundController.cs" />
      <Compile Include="Assets\Script\scripts\PlayerController.cs" />
@@ -73,6 +73,8 @@
      <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerShooting.cs" />
+     <Compile Include="Assets\SwordAttack.cs" />
+     <Compile Include="Assets\WeaponHandler.cs" />
      <Compile Include="Assets\_CompletedAssets\Scripts\Camera\CameraFollow.cs" />
      <Compile Include="Assets\_CompletedAssets\Scripts\Enemy\EnemyAttack.cs" />
      <Compile Include="Assets\_CompletedAssets\Scripts\Enemy\EnemyHealth.cs" />
