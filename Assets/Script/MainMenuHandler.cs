@@ -3,18 +3,17 @@ using System.Collections;
 
 public class MainMenuHandler : MonoBehaviour {
 
-	private bool isFirst = true;
+	private GameObject informationHandler;
+
+	void Awake() {
+		informationHandler = GameObject.Find ("InformationHandler");
+
+	}
 
 	// Use this for initialization
 	void Start () {
 		Screen.showCursor = true;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (isFirst) {
-			GameObject.Find ("InformationHandler").SetActive (false);
-			isFirst = false;
-		}
+		informationHandler.GetComponent<InformationHandler> ().ResetStatus ();
+		informationHandler.SetActive (false);
 	}
 }

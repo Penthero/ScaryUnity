@@ -8,7 +8,7 @@ public class MeleeAttack : MonoBehaviour {
 	public float attackDelay = 0.4f;
 	public WeaponHandler weaponHandler;
 	private bool enemyInRange;
-	private Collider enemy;
+	private Collider enemy = null;
 	private float timer;
 
 	// Use this for initialization
@@ -26,20 +26,22 @@ public class MeleeAttack : MonoBehaviour {
 			enemyInRange = false;
 
 			//EnemyHealth enemyHealth = enemy.collider.GetComponent<EnemyHealth>();
-			CompleteProject.EnemyHealth enemyHealth = enemy.GetComponent <CompleteProject.EnemyHealth> ();
+			if(enemy){
+				CompleteProject.EnemyHealth enemyHealth = enemy.GetComponent <CompleteProject.EnemyHealth> ();
 
-			if(enemyHealth)
-				enemyHealth.TakeDamage(damage, new Vector3(0, 0, 0));
+				if(enemyHealth)
+					enemyHealth.TakeDamage(damage, new Vector3(0, 0, 0));
+			}
+			enemy = null;
 		}
 	}
 
 	void OnTriggerEnter (Collider other)
 	{
-		// If the entering collider is the player...
-		if(!enemyInRange  && weaponHandler.isAttacking && other.tag == "Enemy" && (timer >= attackDelay))
+		// If the entering collider is a enemy...
+		if(!enemyInRange  && weaponHandler.isAttacking && other.tag == "Enemy" && enemy == null && (timer >= attackDelay))
 		{
-			// ... the player is in range.
-			Debug.Log ("in Range");
+			// ... the enemy is in range.
 			enemyInRange = true;
 			enemy = other;
 			timer = 0;

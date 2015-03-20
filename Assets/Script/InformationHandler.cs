@@ -5,6 +5,8 @@ public class InformationHandler : MonoBehaviour {
 
 	public Vector3[] startPosition;
 	public Vector3[] startRotation;
+	public CompleteProject.PlayerHealth playerHealth;
+	public Flashlight flashLight;
 
 	private GameObject player;
 	//public GameObject hud;
@@ -22,8 +24,9 @@ public class InformationHandler : MonoBehaviour {
 	
 	}
 
-	public void Reset() {
-
+	public void ResetStatus() {
+		playerHealth.currentHealth = playerHealth.startingHealth;
+		flashLight.AlterEnergy ((int)flashLight.maxBatteryLife);
 	}
 
 	public void updateInformationData(int id) {

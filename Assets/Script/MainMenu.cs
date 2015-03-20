@@ -11,10 +11,13 @@ public class MainMenu : MonoBehaviour {
 	private InformationHandler infoHandler;
 	private Text text;
 
+	void Awake() {
+		informationHandler = GameObject.Find ("InformationHandler");
+		infoHandler = informationHandler.GetComponent<InformationHandler> ();
+	}
+
 	// Use this for initialization
 	void Start () {
-		informationHandler = GameObject.Find("InformationHandler");
-		infoHandler = informationHandler.GetComponent<InformationHandler> ();
 		text = GetComponent<Text> ();
 	}
 
