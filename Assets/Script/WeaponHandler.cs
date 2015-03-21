@@ -6,8 +6,12 @@ public class WeaponHandler : MonoBehaviour {
 	public GameObject[] Weapons;
 	public bool isAttacking = false;
 
+	public GameObject[] HUDElements;
+
 	private Animator[] anims;
 	private int currentWeapon = 1;
+
+
 
 	// Use this for initialization
 	void Start () {
@@ -24,12 +28,26 @@ public class WeaponHandler : MonoBehaviour {
 				else
 					Weapons [i].SetActive (false);
 
+		for (int i = 0; i < HUDElements.Length; ++i)
+			if (HUDElements[i])
+				if (i == currentWeapon)
+					HUDElements [i].SetActive (true);
+				else
+					HUDElements [i].SetActive (false);
+
 	}
 
 	void ChangeWeapons(int weaponId) {
 		if (weaponId >= 0 && weaponId < Weapons.Length && Weapons[weaponId] && (weaponId != currentWeapon)) {
 			Weapons [weaponId].SetActive (true);
 			Weapons [currentWeapon].SetActive (false);
+
+			if(HUDElements.Length > weaponId && HUDElements [weaponId]) {
+				HUDElements [weaponId].SetActive (true);
+			}
+			if(HUDElements.Length > currentWeapon && HUDElements [currentWeapon])
+				HUDElements [currentWeapon].SetActive (false);
+
 			currentWeapon = weaponId;
 		}
 	}

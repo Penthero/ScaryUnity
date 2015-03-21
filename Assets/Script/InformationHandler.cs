@@ -3,8 +3,8 @@ using System.Collections;
 
 public class InformationHandler : MonoBehaviour {
 
-	public Vector3[] startPosition;
-	public Vector3[] startRotation;
+	public Vector3[] startPositions;
+	public Vector3[] startRotations;
 	public CompleteProject.PlayerHealth playerHealth;
 	public Flashlight flashLight;
 
@@ -30,13 +30,13 @@ public class InformationHandler : MonoBehaviour {
 	}
 
 	public void updateInformationData(int id) {
-		if (startPosition.Length > id)
-			player.transform.position = startPosition [id];
+		if (startPositions.Length > id)
+			player.transform.position = startPositions [id];
 		else
 			player.transform.position = Vector3.zero;
 
-		if(startRotation.Length > id)
-			player.transform.rotation = Quaternion.Euler (startRotation [id]);
+		if(startRotations.Length > id)
+			player.transform.rotation = Quaternion.Euler (startRotations [id]);
 		else
 			player.transform.rotation = Quaternion.Euler (Vector3.zero);
 	}

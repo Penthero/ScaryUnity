@@ -4,9 +4,10 @@ using System.Collections;
 public class MeleeAttack : MonoBehaviour {
 
 
-	public int damage = 40;
-	public float attackDelay = 0.4f;
 	public WeaponHandler weaponHandler;
+	public int MaxDamage = 40;
+	public int currentDamage = 40;
+	public float attackDelay = 0.4f;
 	private bool enemyInRange;
 	private Collider enemy = null;
 	private float timer;
@@ -15,6 +16,7 @@ public class MeleeAttack : MonoBehaviour {
 	void Start () {
 		enemyInRange = false;
 		timer = 0.0f;
+		currentDamage = MaxDamage;
 	}
 	
 	// Update is called once per frame
@@ -30,7 +32,7 @@ public class MeleeAttack : MonoBehaviour {
 				CompleteProject.EnemyHealth enemyHealth = enemy.GetComponent <CompleteProject.EnemyHealth> ();
 
 				if(enemyHealth)
-					enemyHealth.TakeDamage(damage, new Vector3(0, 0, 0));
+					enemyHealth.TakeDamage(currentDamage, new Vector3(0, 0, 0));
 			}
 			enemy = null;
 		}

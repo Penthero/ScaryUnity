@@ -61,6 +61,7 @@
      <Compile Include="Assets\Script\PickupObject.cs" />
      <Compile Include="Assets\Script\Pickupable.cs" />
      <Compile Include="Assets\Script\PreGameLoader.cs" />
+     <Compile Include="Assets\Script\Sword.cs" />
      <Compile Include="Assets\Script\SwordAttack.cs" />
      <Compile Include="Assets\Script\WeaponHandler.cs" />
      <Compile Include="Assets\Script\scripts\CameraController.cs" />
