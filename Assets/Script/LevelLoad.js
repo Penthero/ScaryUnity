@@ -1,6 +1,7 @@
 ﻿var inRange;
 
 public var guiSkin : GUISkin;
+public var levelId : int;
 
 function OnTriggerEnter (c : Collider)
 {
@@ -28,7 +29,7 @@ function Update ()
 	{
 		if (Input.GetKeyDown ("e"))
 		{
-			Application.LoadLevel("house");
+			Application.LoadLevel(levelId);
 		
 		}
 	
