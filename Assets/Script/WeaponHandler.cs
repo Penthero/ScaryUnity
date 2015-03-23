@@ -10,6 +10,7 @@ public class WeaponHandler : MonoBehaviour {
 
 	private Animator[] anims;
 	private int currentWeapon = 1;
+	private bool[] hasFoundWeapon;
 
 
 
@@ -35,10 +36,17 @@ public class WeaponHandler : MonoBehaviour {
 				else
 					HUDElements [i].SetActive (false);
 
+		hasFoundWeapon = new bool[Weapons.Length];
+		for (int i = 0; i < Weapons.Length; ++i) {
+			hasFoundWeapon[i] = false;
+		}
+		hasFoundWeapon [1] = true;
+
+
 	}
 
 	void ChangeWeapons(int weaponId) {
-		if (weaponId >= 0 && weaponId < Weapons.Length && Weapons[weaponId] && (weaponId != currentWeapon)) {
+		if (weaponId >= 0 && weaponId < Weapons.Length && Weapons[weaponId] && hasFoundWeapon[weaponId] && (weaponId != currentWeapon)) {
 			Weapons [weaponId].SetActive (true);
 			Weapons [currentWeapon].SetActive (false);
 
@@ -50,6 +58,11 @@ public class WeaponHandler : MonoBehaviour {
 
 			currentWeapon = weaponId;
 		}
+	}
+
+	public void EquipWeapon(int weaponId) {
+		if (weaponId >= 0 && weaponId < hasFoundWeapon.Length) 
+			hasFoundWeapon [weaponId] = true;
 	}
 	
 	// Update is called once per frame

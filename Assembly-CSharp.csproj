@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{5C20C4BB-6DAA-8DD8-731C-E7CE92FCB2D5}</ProjectGuid>
+	<ProjectGuid>{C40AAE78-5677-894D-A35B-C67488968767}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +64,8 @@
      <Compile Include="Assets\Script\Sword.cs" />
      <Compile Include="Assets\Script\SwordAttack.cs" />
      <Compile Include="Assets\Script\WeaponHandler.cs" />
+     <Compile Include="Assets\Script\WeaponPickUp.cs" />
+     <Compile Include="Assets\Script\flashlightAttack.cs" />
      <Compile Include="Assets\Script\scripts\CameraController.cs" />
      <Compile Include="Assets\Script\scripts\GroundController.cs" />
      <Compile Include="Assets\Script\scripts\PlayerController.cs" />
@@ -98,14 +100,14 @@
      <None Include="Assets\Fonts\LuckiestGuy\LICENSE.txt" />
      <None Include="Assets\license.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{03AEE3A6-1AB0-5B47-1A94-11F2DD721E28}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{BB51BC29-D62D-36BF-9C05-528FB2721B0B}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{4CC55DC9-8C0F-45AA-C9E5-A2E7A373FC7C}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{CC5274EC-3B27-4488-3809-4CB9F1477C1E}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
