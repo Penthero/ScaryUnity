@@ -14,9 +14,9 @@ controller.isGrounded && controller.velocity.magnitude < 7 && controller.velocit
 /////////////////////////////////// Ground ////////////////////////////////////////
 function WalkOnGround() {
 	step = false;
-	audio.clip = ground[Random.Range(0, ground.length)];
-	audio.volume = .1;
-	audio.Play();
+	GetComponent.<AudioSource>().clip = ground[Random.Range(0, ground.length)];
+	GetComponent.<AudioSource>().volume = .1;
+	GetComponent.<AudioSource>().Play();
 	yield WaitForSeconds (audioStepLengthWalk);
 	step = true;
 }

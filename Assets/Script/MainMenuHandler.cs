@@ -12,7 +12,7 @@ public class MainMenuHandler : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Screen.showCursor = true;
+		Cursor.visible = true;
 		informationHandler.GetComponent<InformationHandler> ().ResetStatus ();
 		informationHandler.SetActive (false);
 	}

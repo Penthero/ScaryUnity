@@ -226,7 +226,7 @@ function PauseMenu()
 	if (GUILayout.Button ("Quit to Main Menu"))
 	{	
 		UnPauseGame();
-		Screen.showCursor = true;
+		Cursor.visible = true;
 		Application.LoadLevel(loadMainMenu);
 	}
 	
@@ -235,7 +235,7 @@ function PauseMenu()
 
 function PauseGame() 
 {
-	Screen.showCursor = true;
+	Cursor.visible = true;
     savedTimeScale = Time.timeScale;
     Time.timeScale = 0;
     AudioListener.pause = true;
@@ -254,7 +254,7 @@ function PauseGame()
 
 function UnPauseGame() 
 {
-	Screen.showCursor = false;
+	Cursor.visible = false;
     Time.timeScale = savedTimeScale;
     AudioListener.pause = false;
 	firstPersonControllerCamera.enabled = true;

@@ -61,6 +61,6 @@ public class MouseLook : MonoBehaviour {
 			GetComponent<Rigidbody>().freezeRotation = true;
 
 		// Remove mouse cursor
-		Screen.showCursor = false;
+		Cursor.visible = false;
 	}
 }

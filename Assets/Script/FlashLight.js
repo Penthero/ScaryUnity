@@ -83,13 +83,13 @@ function toggleFlashlightSFX()
 {
 	if(flashlightLightSource.enabled)
 	{
-		audio.clip = soundTurnOn;
+		GetComponent.<AudioSource>().clip = soundTurnOn;
 	}
 	else
 	{
-		audio.clip = soundTurnOff;
+		GetComponent.<AudioSource>().clip = soundTurnOff;
 	}
-	audio.Play();
+	GetComponent.<AudioSource>().Play();
 	
 }
 

@@ -23,12 +23,12 @@ public class PlayerController : MonoBehaviour {
 
 		Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
-		rigidbody.AddForce(movement * speed * Time.deltaTime);
+		GetComponent<Rigidbody>().AddForce(movement * speed * Time.deltaTime);
 
 
 		//on key space
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			rigidbody.AddForce(new Vector3(0,300,0));
+			GetComponent<Rigidbody>().AddForce(new Vector3(0,300,0));
 			Debug.Log ("Space is pressed");
 		}
 
