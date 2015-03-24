@@ -31,7 +31,7 @@ public class Sword : MonoBehaviour {
 		alterDurability (-DeteriorationRate);
 	}
 
-	void alterDurability(float amount) {
+	public void alterDurability(float amount) {
 		currentDurability = Mathf.Clamp (currentDurability + amount, 0, MaxDurability);
 		meleeAttack.currentDamage = (int)Mathf.Clamp((currentDurability / MaxDurability) * (float)meleeAttack.MaxDamage, 10.0f, (float)meleeAttack.MaxDamage);
 	}

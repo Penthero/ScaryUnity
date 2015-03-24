@@ -45,7 +45,7 @@ public class WeaponHandler : MonoBehaviour {
 
 	}
 
-	void ChangeWeapons(int weaponId) {
+	public void ChangeWeapon(int weaponId) {
 		if (weaponId >= 0 && weaponId < Weapons.Length && Weapons[weaponId] && hasFoundWeapon[weaponId] && (weaponId != currentWeapon)) {
 			Weapons [weaponId].SetActive (true);
 			Weapons [currentWeapon].SetActive (false);
@@ -80,7 +80,7 @@ public class WeaponHandler : MonoBehaviour {
 			bool isNumeric = int.TryParse(Input.inputString, out weaponId);
 
 			if(isNumeric)
-				ChangeWeapons(weaponId);
+				ChangeWeapon(weaponId);
 		}
 	}
 }

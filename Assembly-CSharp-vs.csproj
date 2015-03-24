@@ -53,6 +53,7 @@
      <Compile Include="Assets\MobileInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
      <Compile Include="Assets\MobileInput\Scripts\VirtualInput.cs" />
      <Compile Include="Assets\Script\Flashlight.cs" />
+     <Compile Include="Assets\Script\Grindstone.cs" />
      <Compile Include="Assets\Script\InformationHandler.cs" />
      <Compile Include="Assets\Script\MainMenu.cs" />
      <Compile Include="Assets\Script\MainMenuHandler.cs" />
