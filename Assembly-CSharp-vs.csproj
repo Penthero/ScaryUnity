@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{C40AAE78-5677-894D-A35B-C67488968767}</ProjectGuid>
+	<ProjectGuid>{5C20C4BB-6DAA-8DD8-731C-E7CE92FCB2D5}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +52,8 @@
      <Compile Include="Assets\MobileInput\Scripts\PlatformSpecific\MobileInput.cs" />
      <Compile Include="Assets\MobileInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
      <Compile Include="Assets\MobileInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Monster\scripts\MonsterMovement.cs" />
+     <Compile Include="Assets\MonsterAttack.cs" />
      <Compile Include="Assets\Script\Flashlight.cs" />
      <Compile Include="Assets\Script\Grindstone.cs" />
      <Compile Include="Assets\Script\InformationHandler.cs" />
@@ -66,7 +68,6 @@
      <Compile Include="Assets\Script\SwordAttack.cs" />
      <Compile Include="Assets\Script\WeaponHandler.cs" />
      <Compile Include="Assets\Script\WeaponPickUp.cs" />
-     <Compile Include="Assets\Script\flashlightAttack.cs" />
      <Compile Include="Assets\Script\scripts\CameraController.cs" />
      <Compile Include="Assets\Script\scripts\GroundController.cs" />
      <Compile Include="Assets\Script\scripts\PlayerController.cs" />
@@ -95,27 +96,35 @@
      <Compile Include="Assets\_CompletedAssets\Scripts\Player\PlayerHealth.cs" />
      <Compile Include="Assets\_CompletedAssets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\_CompletedAssets\Scripts\Player\PlayerShooting.cs" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBloom.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Monster\shaders\vertexAnim.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Monster\shaders\bumpSpecmap.shader" />
+     <None Include="Assets\Monster\shaders\metalA.shader" />
      <None Include="Assets\Shaders\Rim Lit Bumped Specular.shader" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Fonts\LuckiestGuy\LICENSE.txt" />
      <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+     <None Include="Assets\Monster\shaders\caveShader.shader" />
      <None Include="Assets\license.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\Monster\shaders\monsterShader.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/Gustav/Documents/GitHub/ScaryUnity/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>D:/unity/map/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{BB51BC29-D62D-36BF-9C05-528FB2721B0B}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+      <Project>{03AEE3A6-1AB0-5B47-1A94-11F2DD721E28}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -38,7 +38,7 @@ public class WeaponHandler : MonoBehaviour {
 
 		hasFoundWeapon = new bool[Weapons.Length];
 		for (int i = 0; i < Weapons.Length; ++i) {
-			hasFoundWeapon[i] = false;
+			hasFoundWeapon[i] = true;
 		}
 		hasFoundWeapon [1] = true;
 

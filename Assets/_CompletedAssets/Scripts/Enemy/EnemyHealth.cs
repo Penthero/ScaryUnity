@@ -9,9 +9,9 @@ namespace CompleteProject
         public float sinkSpeed = 2.5f;              // The speed at which the enemy sinks through the floor when dead.
         public int scoreValue = 10;                 // The amount added to the player's score when the enemy dies.
         public AudioClip deathClip;                 // The sound to play when the enemy dies.
+		public EnemyManager enemyManager;
 
 
-		private EnemyManager enemyManager;
         Animator anim;                              // Reference to the animator.
         AudioSource enemyAudio;                     // Reference to the audio source.
         ParticleSystem hitParticles;                // Reference to the particle system that plays when the enemy is damaged.
@@ -30,10 +30,6 @@ namespace CompleteProject
 
             // Setting the current health when the enemy first spawns.
             currentHealth = startingHealth;
-
-			
-			GameObject enemyManagerObj = GameObject.FindGameObjectWithTag ("EnemyManager");
-			enemyManager = enemyManagerObj.GetComponent <EnemyManager> ();
         }
 
 
@@ -94,7 +90,8 @@ namespace CompleteProject
 
         void Death ()
         {
-			enemyManager.DecreseEnemies(1); 
+			if(enemyManager)
+				enemyManager.DecreseEnemies(1); 
             // The enemy is dead.
             isDead = true;
 

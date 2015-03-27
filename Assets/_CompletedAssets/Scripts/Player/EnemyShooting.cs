@@ -34,7 +34,6 @@ namespace CompleteProject
 			// Get the player object
 			player = GameObject.FindGameObjectWithTag ("Player");
 			// Setting up the references.
-			player = GameObject.FindGameObjectWithTag ("Player");
 			//playerHealth = player.GetComponent <PlayerHealth> ();
 			enemyHealth = enemy.GetComponent<EnemyHealth> ();
 			//anim = GetComponent <Animator> ();

@@ -32,15 +32,21 @@ namespace CompleteProject
             {
                 return;
             }
-
-            // Find a random index between zero and one less than the number of spawn points.
-            int spawnPointIndex = Random.Range (0, spawnPoints.Length);
-			float distance = (spawnPoints [spawnPointIndex].position - player.transform.position).magnitude;
-			// Makes sure that enemies only spawn when close to a spawnpoint
-			if (distance < spawnTriggerMaxDistance && distance > spawnTriggerMinDistance) {
-				++currentEnemies;
-				// Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
-				Instantiate (enemy, spawnPoints [spawnPointIndex].position, spawnPoints [spawnPointIndex].rotation);
+			GameObject clone;
+			for(int i = 0; i < spawnPoints.Length; ++i) {
+            // Makes sure that enemies only spawn when close to a spawnpoint
+			float distance = (spawnPoints [i].position - player.transform.position).magnitude;
+				if (distance < spawnTriggerMaxDistance && distance > spawnTriggerMinDistance) {
+					++currentEnemies;
+					// Create an instance of the enemy prefab at the randomly selected spawn point's position and rotation.
+					clone = (Instantiate (enemy, spawnPoints [i].position, spawnPoints [i].rotation) as Transform).gameObject;
+					EnemyHealth eHealth = clone.GetComponent<EnemyHealth>();
+					if(eHealth)
+						eHealth.enemyManager = this;
+					else{
+						Debug.Log ("Enemy Health not found on enemy trying to spawn");
+					}
+				}
 			}
         }
 
