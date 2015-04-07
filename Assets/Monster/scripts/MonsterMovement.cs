@@ -35,7 +35,6 @@ public class MonsterMovement : MonoBehaviour
 		if (((distance = (player.position - transform.position).magnitude) < viewDistance) && (angle < viewAngle || distance < 5.0f) && enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0) {
 				// ... attack.
 				isAttacking = true;
-				nav.enabled = true;
 				nav.SetDestination (player.position);
 
 			if(distance < hitDistance) {
@@ -51,8 +50,7 @@ public class MonsterMovement : MonoBehaviour
 			// Otherwise...
 			else {
 			isAttacking = false;
-			// ... disable the nav mesh agent.
-			nav.enabled = false;
+			nav.SetDestination(transform.position);
 		}
 			
 		if (deathDistance > 0.0f && (transform.position - player.position).magnitude > deathDistance) {
